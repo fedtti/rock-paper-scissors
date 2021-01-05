@@ -7,6 +7,7 @@ const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 sass.compiler = require('sass');
+const uglify = require('gulp-uglify');
 
 /**
  * Compile Sass to CSS, add older browsers support, and minify sources.
@@ -29,10 +30,11 @@ function styles() {
  * 
  */
 function scripts() {
-  return src('./js/**/*.js')
+  return src('./js/main.js')
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
+    .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
