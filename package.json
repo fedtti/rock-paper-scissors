@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/fedtti/rock-paper-scissors.git"
   },
-  "author": "",
+  "author": "Federico Moretti (https://federicomoretti.it/) <hello@federicomoretti.it>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fedtti/rock-paper-scissors/issues"
