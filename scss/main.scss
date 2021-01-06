@@ -1,6 +1,44 @@
+@import 'partials/fonts';
+
 .game {
-  /* Main */
+  background-color: #51597c;
+  color: #f8f9fa;
+  font: 400 1rem/1 'Nunito', sans-serif;
+  height: 100vh;
+  width: 100vw;
+
+  /* Header */
+  &__head {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  /* Contents */
   &__main {
-    display: grid;
+    outline: 0;
+    width: 100%;
+
+    /* Play */
+    &__play {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      justify-content: center;
+      width: 100%;
+
+      div {
+        width: 50%;
+
+        &:first-child, &:last-child {
+          grid-column-end: span 2;
+          width: 100%;
+        }
+      }
+    }
   }
 }
