@@ -52,14 +52,20 @@
           text-align: center;
         }
 
-        div {
+        > div {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 100%;
           justify-content: center;
 
+          div {
+            margin: 0 auto;
+            text-align: center;
+          }
+
           button {
             appearance: none;
+            outline: 0;
           }
         }
       }
