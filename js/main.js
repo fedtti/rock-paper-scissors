@@ -2,8 +2,9 @@
  *
  */
 const computerPlay = () => {
-  const availableChoices = [ 'rock', 'paper', 'scissors' ];
-
+  const computerOptions = [ 'rock', 'paper', 'scissors' ];
+  let computerSelection = computerOptions[Math.floor(Math.random()*computerOptions.length)];
+  console.log(computerSelection);
 };
 
 /**
