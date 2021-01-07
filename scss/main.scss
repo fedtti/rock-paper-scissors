@@ -65,7 +65,27 @@
 
           button {
             appearance: none;
+            background-color: #ffd43b;
+            border-bottom-width: 0.25rem;
+            border-color: rgba(0, 0, 0, 0.2);
+            border-left-width: 0.0625rem;
+            border-radius: 0.25rem;
+            border-right-width: 0.0625rem;
+            border-style: solid;
+            border-top-width: 0.0625rem;
+            color: #183153;
+            cursor: pointer;
             outline: 0;
+            transition: background-color 0.5s linear;
+
+            &:active, &:focus, &:hover {
+              background-color: #fab005;
+            }
+
+            &:active {
+              border-top-width: 0.25rem;
+              border-bottom-width: 0.0625rem;
+            }
           }
         }
       }
