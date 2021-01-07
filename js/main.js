@@ -1,10 +1,14 @@
 /**
  *
  */
+let playerSelection;
+
+/**
+ *
+ */
 const computerPlay = () => {
   const computerOptions = [ 'rock', 'paper', 'scissors' ];
-  let computerSelection = computerOptions[Math.floor(Math.random()*computerOptions.length)];
-  console.log(computerSelection);
+  let computerSelection = computerOptions[Math.floor(Math.random() * computerOptions.length)];
 };
 
 /**
