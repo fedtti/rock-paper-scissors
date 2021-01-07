@@ -52,6 +52,7 @@ function preview() {
     }
   });
   watch('./scss/**/*.scss', styles);
+  watch('./js/main.js', scripts);
   watch('./*.html').on('change', browserSync.reload);
 }
 

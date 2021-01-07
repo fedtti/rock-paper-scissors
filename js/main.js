@@ -2,6 +2,7 @@
  *
  */
 const computerPlay = () => {
+  const availableChoices = [ 'rock', 'paper', 'scissors' ];
 
 };
 
