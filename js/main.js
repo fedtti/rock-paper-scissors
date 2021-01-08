@@ -4,7 +4,7 @@ const instructions = document.getElementById('instructions');
  * Hide the instructions modal on page loading, if a user has already read it.
  */
 const hideInstructions = () => {
-  if (localStorage.getItem('instructions')) {
+  if (localStorage.getItem('instructions') === 'read') {
     instructions.style.display = 'none';
   }
 };
@@ -21,7 +21,7 @@ const closeInstructions = () => {
    * Remember that a user has already read the instructions.
    */
   if (typeof(Storage) !== 'undefined') {
-    localeStorage.setItem('instructions', 'read');
+    localStorage.setItem('instructions', 'read');
   }
 };
 const closeInstructionsButton = document.getElementById('close-instructions');
