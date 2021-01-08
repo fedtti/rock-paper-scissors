@@ -1,28 +1,14 @@
-/**
- *
- */
-let playerSelection;
-
-/**
- *
- */
-const computerPlay = () => {
-  const computerOptions = [ 'rock', 'paper', 'scissors' ];
-  let computerSelection = computerOptions[Math.floor(Math.random() * computerOptions.length)];
-};
-
-/**
- *
- * @param {*} playerSelection -
- * @param {*} computerSelection -
- */
-const playRound = (playerSelection, computerSelection) => {
+const instructions = document.getElementById('instructions');
+const hideInstructions = () => {
 
 };
 
 /**
- *
+ * Close the instructions modal on user input.
  */
-const game = () => {
-
+const closeInstructions = () => {
+  instructions.style.opacity = '0';
+  instructions.style.visibility = 'hidden';
 };
+const closeInstructionsButton = document.getElementById('close-instructions');
+closeInstructionsButton.addEventListener('click', closeInstructions, false);

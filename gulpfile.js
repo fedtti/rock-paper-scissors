@@ -27,7 +27,7 @@ function styles() {
 }
 
 /**
- * Compile ES6 to ES5, add older browsers support, and minify sources.
+ * Compile JavaScript, add older browsers support, and minify sources.
  */
 function scripts() {
   return src('./js/main.js')

@@ -13,14 +13,20 @@
     <script defer src="./js/main.min.js"></script>
   </head>
   <body class="game">
-    <!-- Instructions -->
-    <aside class="game__info">
-
-    </aside>
     <!-- Header -->
     <header class="game__head">
       <h1>Rock, Paper, Scissors</h1>
     </header>
+    <!-- Instructions -->
+    <aside class="game__info" id="instructions">
+      <div>
+        <h2>Instructions</h2>
+        <p></p>
+        <button id="close-instructions">
+          Play
+        </button>
+      </div>
+    </aside>
     <!-- Contents -->
     <main class="game__main" tabindex="-1">
       <!-- Play -->
@@ -29,7 +35,7 @@
           <p>Player <span id="player-score">0</span> - <span id="computer-score">0</span> Computer</p>
         </div>
         <div id="player">
-          <h2>Player</h2>
+          <h3>Player</h3>
           <div>
             <div>
               <button id="">
@@ -49,7 +55,7 @@
           </div>
         </div>
         <div id="computer">
-          <h2>Computer</h2>
+          <h3>Computer</h3>
           <div>
             <div>
               <button id="">
