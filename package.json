@@ -2,20 +2,21 @@
   "name": "rock-paper-scissors",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "homepage": "https://federicomoretti.it/rock-paper-scissors",
+  "bugs": {
+    "url": "https://github.com/fedtti/rock-paper-scissors/issues"
   },
+  "license": "MIT",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it/)",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fedtti/rock-paper-scissors.git"
   },
-  "author": "Federico Moretti (https://federicomoretti.it/) <hello@federicomoretti.it>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fedtti/rock-paper-scissors/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/fedtti/rock-paper-scissors#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -31,6 +32,7 @@
     "postcss": "^8.2.2",
     "sass": "^1.32.0"
   },
+  "private": "true",
   "browserslist": [
     "last 4 version"
   ]
