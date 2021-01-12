@@ -49,17 +49,20 @@ const gamePlay = (playerChoice, computerChoice) => {
 };
 
 /**
- * Generate a random string between ‘rock’, ‘paper’, and ‘scissors’.
+ * Generate a random string between ‘rock’, ‘paper’, and ‘scissors’ and animate the related button.
  */
 const computerPlay = () => {
   const availableChoices = ['rock', 'paper', 'scissors'];
-  return availableChoices[Math.floor(Math.random() * availableChoices.length)];
+  let computerChoice = availableChoices[Math.floor(Math.random() * availableChoices.length)];
+
+  return computerChoice;
 };
 
 /**
- *
+ * Get the user choice between ‘rock’, ‘paper’, and ‘scissors’ from the clicked button and start a new game.
  */
 const playerPlay = (playerChoice) => {
-
   gamePlay(playerChoice, computerPlay);
 };
+const availableChoices = document.querySelectorAll('#player button');
+availableChoices.forEach(availableChoice => availableChoice.addEventListener('click', playerPlay(availableChoice.id), false));

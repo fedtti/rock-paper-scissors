@@ -89,7 +89,7 @@
       padding: 0 1rem;
       width: 100%;
 
-      #player, #computer {
+      #player {
         background-color: #183153;
         border-radius: 0.5rem;
         box-sizing: border-box;
@@ -148,14 +148,6 @@
             i {
               font-size: 2rem;
             }
-          }
-        }
-      }
-
-      #computer {
-        > div {
-          button {
-            pointer-events: none;
           }
         }
       }
