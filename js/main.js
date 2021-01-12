@@ -1,5 +1,4 @@
 const instructions = document.getElementById('instructions');
-
 /**
  * Hide the instructions modal on page loading, if a user has already read it.
  */
@@ -9,7 +8,6 @@ const hideInstructions = () => {
   }
 };
 window.onload = hideInstructions;
-
 /**
  * Close the instructions modal on a user input.
  */
@@ -24,17 +22,14 @@ const closeInstructions = () => {
     localStorage.setItem('instructions', 'read');
   }
 };
-
 const closeInstructionsButton = document.getElementById('close-instructions');
 closeInstructionsButton.addEventListener('click', closeInstructions, false);
-
 /**
  *
  */
 const gameWinner = () => {
 
 };
-
 /**
  *
  * @param {string} playerChoice • One of ‘rock’, ‘paper’, or ‘scissors’ chosen by the player.
@@ -44,12 +39,11 @@ const gamePlay = (playerChoice, computerChoice) => {
   if (playerChoice === computerChoice) {
 
   } else {
-    
+
   }
 };
-
 /**
- * Generate a random string between ‘rock’, ‘paper’, and ‘scissors’ and animate the related button.
+ * Generate a random string between ‘rock’, ‘paper’, and ‘scissors’.
  */
 const computerPlay = () => {
   const computerChoices = ['rock', 'paper', 'scissors'];
