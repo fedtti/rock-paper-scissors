@@ -26,3 +26,20 @@ const closeInstructions = () => {
 };
 const closeInstructionsButton = document.getElementById('close-instructions');
 closeInstructionsButton.addEventListener('click', closeInstructions, false);
+
+
+/**
+ *
+ */
+
+let games = 0;
+
+/**
+ *
+ * @param {*} playerChoice
+ * @param {*} computerChoice
+ */
+const playGame = (playerChoice, computerChoice) => {
+  if (games === 5) return;
+
+};
