@@ -23,12 +23,27 @@ const closeInstructions = () => {
 };
 const closeInstructionsButton = document.getElementById('close-instructions');
 closeInstructionsButton.addEventListener('click', closeInstructions, false);
-
+let playerWins = 0;
+let computerWins = 0;
+const playerScore = document.getElementById('player-score');
+playerScore.innerText = playerWins;
+const computerScore = document.getElementById('computer-score');
+computerScore.innerText = computerWins;
 /**
  *
  */
 const gameWinner = () => {
+  if (playerWins === 5 || computerWins === 5) {
+    if (playerWins === 5) {
 
+    } else {
+
+    }
+    playerWins = 0;
+    playerScore.innerText = playerWins;
+    computerWins = 0;
+    computerScore.innerText = computerWins;
+  }
 };
 /**
  *
@@ -46,30 +61,36 @@ const gamePlay = (playerChoice, computerChoice) => {
     if (playerChoice === 'rock') {
       if (computerChoice === 'paper') {
         playFeedback.innerHTML = playerLose;
-
+        computerWins++;
+        computerScore.innerText = computerWins;
       } else {
         playFeedback.innerHTML = playerWon;
-
+        playerWins++;
+        playerScore.innerText = playerWins;
       }
     } else if (playerChoice === 'paper') {
       if (computerChoice === 'rock') {
         playFeedback.innerHTML = playerWon;
-
+        playerWins++;
+        playerScore.innerText = playerWins;
       } else {
         playFeedback.innerHTML = playerLose;
-
+        computerWins++;
+        computerScore.innerText = computerWins;
       }
     } else {
       if (computerChoice === 'rock') {
         playFeedback.innerHTML = playerLose;
-
+        computerWins++;
+        computerScore.innerText = computerWins;
       } else {
         playFeedback.innerHTML = playerWon;
-
+        playerWins++;
+        playerScore.innerText = playerWins;
       }
     }
   }
-  gameWinner();
+gameWinner();
 };
 /**
  * Generate a random string between ‘rock’, ‘paper’, and ‘scissors’.
