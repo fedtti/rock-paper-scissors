@@ -33,12 +33,14 @@ computerScore.innerText = computerWins;
  * Show the winner, then reset the scores.
  */
 const gameWinner = () => {
+  const results = document.getElementById('results');
   if (playerWins === 5 || computerWins === 5) {
     if (playerWins === 5) {
 
     } else {
 
     }
+
     playerWins = 0;
     playerScore.innerText = playerWins;
     computerWins = 0;
