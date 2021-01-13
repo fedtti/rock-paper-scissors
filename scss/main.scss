@@ -39,12 +39,12 @@
 
     div {
       color: #495057;
+      max-width: 35.5rem;
       padding: 1rem;
 
       h2 {
         font-size: 1.5rem;
         font-weight: 800;
-        line-height: 1.2;
         margin: 0 0 0.5rem 0;
       }
 
@@ -61,12 +61,15 @@
         border-color: rgba(0, 0, 0, 0.2);
         border-left-width: 0.0625rem;
         border-right-width: 0.0625rem;
+        border-radius: 0.25rem;
         border-style: solid;
         border-top-width: 0.0625rem;
         color: #f8f9fa;
         cursor: pointer;
-        margin: 0 auto;
+        font-weight: 600;
+        margin: 1.5rem auto 0 auto;
         outline: 0;
+        padding: 1rem 2rem;
         transition: background-color 0.5s linear;
 
         &:active, &:focus, &:hover {
