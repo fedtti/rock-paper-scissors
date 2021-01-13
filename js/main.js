@@ -15,7 +15,7 @@ const closeInstructions = () => {
   instructions.style.opacity = '0';
   instructions.style.visibility = 'hidden';
   /**
-   * Remember that the user has already read the instructions.
+   * Remember that the user has read the instructions.
    */
   if (typeof(Storage) !== 'undefined') {
     localStorage.setItem('instructions', 'read');
@@ -91,7 +91,7 @@ const gamePlay = (playerChoice, computerChoice) => {
     }
   }
   /**
-   * Check if there’s already a winner.
+   * Check if there’s a winner.
    */
   gameWinner();
 };
